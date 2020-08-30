@@ -17,7 +17,7 @@
   .message-div {
     width:430px;
     height: 700px;
-    padding: 60px 35px 35px 35px;
+    padding: 35px 35px 35px 35px;
     border-radius: 40px;
     background: #ecf0f3;
     box-shadow: 13px 13px 20px #cbced1,
@@ -32,13 +32,10 @@
 
    */
  
-#showMessages{
-    height: 400px;
-}
 
   .fields {
     width: 100%;
-    padding: 75px 5px 5px 5px;
+    padding: 20px 5px 5px 5px;
   }
   .fields input {
     border: none;
@@ -46,7 +43,7 @@
     background: none;
     font-size: 18px;
     color: #555;
-    padding:15px 30px 15px 5px;
+    padding:15px 30px 15px 30px;
   }
   .message, .password {
     margin-bottom: 20px;
@@ -78,3 +75,45 @@
   .signin-button:active {
     background:#1da88a;
   }
+
+
+#showMessages{
+    height: 470px;
+    width: 100%;
+    overflow: scroll;
+    padding: 0 4px 0 0;
+    
+}
+
+
+#showMessages ul li{
+    list-style: none;
+    padding: 10px; 
+    border-radius: 25px;
+    margin-top: 10px;
+    transform: rotate(-180deg);
+    max-width: 80%;
+    width: auto;
+    color: #fff;
+    
+}
+
+ul {
+
+  height: inherit;
+  transform: rotate(180deg);
+  display: flex;
+  flex-flow: column;
+  padding: 0;;
+
+}
+
+.mine{
+  align-self: flex-start;
+  background-color: rgb(68, 68, 255);
+}
+
+.your{
+  align-self: flex-end;
+  background-color:purple;
+}
